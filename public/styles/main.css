@@ -1,0 +1,96 @@
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+main {
+  max-width: 40em;
+  padding: 1em;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input, select, button {
+  border: 1px solid var(--border-color);
+  color: var(--fg-color);
+  background-color: transparent;
+}
+
+select {
+  background-color: var(--bg-color);
+  padding: 0.275em;
+}
+
+button:active {
+  border: 1px solid var(--border-color);
+  color: var(--background-color);
+  background-color: var(--fg-color);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--header-font);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+nav #logo {
+  text-align: right;
+}
+
+header, footer {
+  background-color: var(--header-bg-color);
+  color: var(--header-fg-color);
+}
+
+
+main p {
+  text-align: justify;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+}
+
+
+error {
+  color: var(--error-color);
+}
+
+confirmation, notice, notification, .notification {
+  color: var(--confirmation-color);
+}
+
+
+inactive {
+  color: var(--neutral-color);
+}
+
+warning, .warning {
+  color: var(--warning-color);
+}
+
+a {
+/*  text-decoration: none;*/
+  color: var(--secondary-highlight-color);
+}
+
+
+input, select, textarea {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  border: 1px solid var(--neutral-color);
+}
+
+full-screen button {
+  border: none;
+}

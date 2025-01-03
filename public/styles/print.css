@@ -1,0 +1,63 @@
+@media print {
+  /* Ensure the whole document uses a consistent styling for print */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  /* Target all sections */
+  section {
+    width: 148mm; /* A5 width in millimeters */
+    height: 210mm; /* A5 height in millimeters */
+    margin: 0 auto;
+    padding: 0;
+    page-break-after: always; /* Ensure each section starts on a new page */
+    box-sizing: border-box;
+    overflow: hidden; /* Hides any overflow */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  section img {
+    position: absolute;
+    width: auto;
+    left: 0in;
+    top:0in;
+    width: 100%;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+    width: 100vw; /* Use 100% of the viewport width */
+    height: 100vh; /* Use 100% of the viewport height */
+    object-fit: cover; /* Ensures the image cover the entire area, maintaining aspect ratio */
+    page-break-before: always; /* Ensure the image starts on a new page if needed */
+    page-break-after: always; /* Ensure the image ends on a page by itself */
+    display: block; /* Removes inline spacing issues */
+
+  }
+
+
+
+
+  /* Ensure backgrounds, images, and borders print nicely */
+  * {
+    background: none !important;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Optional: If you need to hide specific elements during print */
+  .no-print {
+    display: none !important;
+  }
+}

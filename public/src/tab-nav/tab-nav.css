@@ -1,0 +1,33 @@
+tab-nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+tab-nav-menu a {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+tab-nav-menu a:hover {
+  border: 1px solid var(--neutral-color);
+}
+
+tab-nav-menu a.active {
+  border-bottom-color: transparent;
+  background-color: var(--neutral-color);
+  color: var(--fg-color);
+}
+
+tab-nav-body {
+  display: block;
+}
+
+tab-nav-item {
+  display: none;
+}
+
+tab-nav-item.active {
+  display: block;
+}

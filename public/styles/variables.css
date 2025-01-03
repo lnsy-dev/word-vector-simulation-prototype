@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Fira Code';
+    font-weight: 700;
+    src: url('./fonts/FiraCode-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-weight: 300;
+    src: url('./fonts/FiraCode-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    src: url('./fonts/FiraCode-Medium.otf') format('opentype');
+}
+
+
+@font-face {
+   font-family: 'DepartureMono';
+   src: url('./DepartureMono-Regular.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-weight: 400;
+    src: url('./fonts/FiraMono-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    font-weight: 700;
+    src: url('./fonts/FiraSansCondensed-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Fira Sans Extra Condensed';
+    font-weight: 700;
+    src: url('./fonts/FiraSansExtraCondensed-Bold.otf') format('opentype');
+}
+
+:root {
+  --bg-color: #fff;
+  --fg-color: #111;
+  --header-bg-color: var(--bg-color);
+  --header-fg-color: var(--fg-color);
+  --highlight-color: #11cc44;
+  --neutral-color: #ccc;
+  --more-subtle-neutral: #eee;
+
+  --border-color: var(--neutral-color);
+  --spacing-xs: 0.5em;
+
+  --secondary-highlight-color: #333;
+  --confirmation-color: green;
+  --notification-color: var(--confirmation-color);
+  --inactive-color: var(--neutral-color);
+  --warning-color: orange;
+  --error-color: red;
+  --body-font: "Fira Code", sans-serif;
+  --header-font: "Fira Sans Extra Condensed", sans-serif;
+  --editor-font: "Fira Code", sans-serif;
+  --header-height: 3em;
+  --footer-height: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --fg-color: #fff;
+    --header-bg-color: var(--bg-color);
+    --header-fg-color: var(--fg-color);
+    --neutral-color: #d5d5d5;
+    --more-subtle-neutral: #333;
+    --secondary-highlight-color: #333;
+    --highlight-color: #11cc44;
+    --mid-tone-color: grey;
+    --editor-border: 1px solid var(--mid-tone-color);
+    --logo-color: orange;
+  }
+}

@@ -1,0 +1,8 @@
+You are a vanilla Javascript, CSS and HTML expert. 
+We are writing a bun.sh app. 
+All front end components should be custom HTML elements that use the public/src/dataroom.js file as its basis. 
+
+For all styles, please use public/styles/variable.css to get any values, any new colors or font sizes should be added there. Any layout (size, shape and layout of divs) should be in the public/styles/layout.css file. Individual styles should be in their respective folders in the public/src/{element-name} folders. All styles found in variables.css, layout.css and public/styles/main.css are as I like them -- please style as little as possible. 
+Please use em units for all css sizes.
+I prefer as many custom html elements as possible instead of using divs.
+I prefer global CSS styles over local styles.
