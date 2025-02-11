@@ -1,2 +1,4 @@
 node_modules
 node_modules
+public/three-js/
+.DS_Store
