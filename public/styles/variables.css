@@ -60,11 +60,38 @@
   --inactive-color: var(--neutral-color);
   --warning-color: orange;
   --error-color: red;
-  --body-font: "Fira Code", sans-serif;
-  --header-font: "Fira Sans Extra Condensed", sans-serif;
-  --editor-font: "Fira Code", sans-serif;
+  --body-font: monospace;
+  --header-font: monospace;
+  --editor-font: monospace;
   --header-height: 3em;
   --footer-height: 1em;
+
+  /* Colors */
+  --physics-control-bg: rgba(0, 0, 0, 0.8);
+  --physics-control-text: rgba(255, 255, 255, 0.9);
+  --physics-control-border: rgba(255, 255, 255, 0.2);
+  --physics-control-hover: rgba(255, 255, 255, 0.3);
+  --physics-metrics-bg: rgba(0, 0, 0, 0.7);
+  --physics-joint-color: rgba(255, 255, 255, 0.3);
+  
+  /* Sizes */
+  --physics-control-width: 20em;
+  --physics-control-padding: 1em;
+  --physics-control-margin: 0.5em;
+  --physics-control-border-radius: 0.5em;
+  --physics-metrics-padding: 1em;
+  
+  /* Fonts */
+  --physics-control-font-size: 0.9em;
+  --physics-metrics-font-size: 0.8em;
+  --physics-label-font-size: 0.75em;
+  
+  /* Transitions */
+  --physics-transition-speed: 0.2s;
+  
+  /* Z-indices */
+  --physics-controls-z: 100;
+  --physics-metrics-z: 90;
 }
 
 @media (prefers-color-scheme: dark) {

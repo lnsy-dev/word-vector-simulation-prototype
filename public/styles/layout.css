@@ -122,3 +122,42 @@ lazy-img {
     grid-column: 1;
   }
 }
+
+dataroom-notification {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--physics-controls-z);
+  text-align: center;
+}
+
+physics-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  z-index: var(--physics-controls-z);
+  background: transparent;
+}
+
+physics-search input {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0;
+  border: 1px solid var(--physics-control-text);
+  border-radius: 0;
+  background: var(--physics-control-bg);
+  color: var(--physics-control-text);
+  font-family: var(--body-font);
+  font-size: 2em;
+  box-sizing: border-box;
+}
+
+physics-search input::placeholder {
+  color: var(--physics-control-text);
+  opacity: 0.5;
+}
