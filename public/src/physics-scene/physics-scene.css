@@ -1,0 +1,13 @@
+physics-scene {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+dataroom-notification {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  color: var(--text-color);
+} 

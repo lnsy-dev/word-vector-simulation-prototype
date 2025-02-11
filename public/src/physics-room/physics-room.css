@@ -1,0 +1,108 @@
+physics-room {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+
+physics-room canvas {
+  width: 100%;
+  height: 100%;
+}
+
+physics-controls {
+  position: absolute;
+  top: var(--physics-control-margin);
+  right: var(--physics-control-margin);
+  width: var(--physics-control-width);
+  z-index: var(--physics-controls-z);
+}
+
+physics-metrics {
+  position: absolute;
+  top: var(--physics-control-margin);
+  left: var(--physics-control-margin);
+  z-index: var(--physics-metrics-z);
+}
+
+.physics-controls {
+  background: var(--physics-control-bg);
+  padding: var(--physics-control-padding);
+  border-radius: var(--physics-control-border-radius);
+  border: 1px solid var(--physics-control-border);
+  color: var(--physics-control-text);
+  font-size: var(--physics-control-font-size);
+}
+
+.control-group {
+  margin-bottom: var(--physics-control-margin);
+}
+
+.control-group:last-child {
+  margin-bottom: 0;
+}
+
+.control-group label {
+  display: block;
+  font-size: var(--physics-label-font-size);
+  margin-bottom: 0.25em;
+  color: var(--physics-control-text);
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  margin: 0.25em 0;
+}
+
+.control-group .value {
+  float: right;
+  font-size: var(--physics-label-font-size);
+  opacity: 0.8;
+}
+
+.physics-metrics {
+  background: var(--physics-metrics-bg);
+  padding: var(--physics-metrics-padding);
+  border-radius: var(--physics-control-border-radius);
+  color: var(--physics-control-text);
+  font-size: var(--physics-metrics-font-size);
+}
+
+.metric-group {
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-group:last-child {
+  margin-bottom: 0;
+}
+
+.metric-group label {
+  opacity: 0.8;
+}
+
+.vector-preview {
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 1px solid var(--physics-control-border);
+}
+
+physics-node {
+  position: absolute;
+  pointer-events: none;
+}
+
+physics-joint {
+  position: absolute;
+  pointer-events: none;
+}
+
+physics-vacuum {
+  position: absolute;
+  pointer-events: none;
+} 
