@@ -1,8 +1,0 @@
-# Index
-
-## Data
-
-## Docs
-
-## Plugins
-
