@@ -1,3 +1,5 @@
+![[splash.png]]
+
 # Word Vector Simulation Prototype
 
 A 3D visualization application that uses word embeddings to create physics-based simulations of semantic relationships between words.
