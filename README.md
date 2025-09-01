@@ -1,4 +1,4 @@
-![[splash.png]]
+![splash.png](splash.png)
 
 # Word Vector Simulation Prototype
 
